@@ -1,0 +1,22 @@
+{
+  "name": "apollocare-client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "enroll": "ts-node src/enroll.ts",
+    "pay": "ts-node src/pay_premium.ts",
+    "stake": "ts-node src/stake.ts",
+    "claim": "ts-node src/submit_claim.ts"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.29.0",
+    "@solana/spl-token": "^0.3.5",
+    "@solana/web3.js": "^1.88.1",
+    "bs58": "^5.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5",
+    "ts-node": "^10.9.1"
+  }
+}
