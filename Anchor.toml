@@ -1,0 +1,15 @@
+[programs.localnet]
+apollo_core = "programs/apollo_core"
+
+[programs.devnet]
+apollo_core = "programs/apollo_core"
+
+[provider]
+# The local cluster endpoint.  When testing locally, run `solana-test-validator`.
+cluster = "localnet"
+# Path to your Solana wallet keypair.  Update this if using a different key.
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+# Optional custom scripts to build and deploy the program
+# deploy = "bash scripts/deploy.sh"
