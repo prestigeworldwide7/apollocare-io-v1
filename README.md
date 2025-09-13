@@ -1,5 +1,6 @@
 # ApolloCare.io v1
 
+
 ApolloCare is a decentralized, community‑owned health coverage platform built on the high throughput Solana blockchain.  The vision is to replace today’s opaque and inefficient U.S. insurance system with transparent on‑chain programs, a member‑controlled DAO and fair market pricing.  This repository contains version 1 of the core protocol contracts and a thin client for interacting with them.  The code is designed for educational and research purposes and should be audited before production use.
 
 ## Motivation
@@ -43,6 +44,7 @@ This version implements a minimal viable protocol for demonstration purposes.  S
 - **TWAB and discount tiers:**  The staking module simply records stake amounts; it does not compute time‑weighted averages or enforce tier rules.  Discounts are not automatically applied to fees in this version.
 - **Claims committee and reviewer selection:**  All claims above the fast‑lane threshold must be manually approved by the authority account.  Decentralized reviewer selection, bonding, slashing and reward distribution are placeholders.
 - **Off‑chain integrations:**  The dApp provided in `client/` is minimal and does not encrypt claim documents or interact with oracles.  A production deployment should integrate HIPAA‑compliant storage and price oracles.
+- 
 
 ## Getting started
 
@@ -89,3 +91,4 @@ Contributions are welcome!  Please review the design documents and understand th
 ## References
 
 For a complete description of the ApolloCare vision and economic model, please refer to the official whitepaper and tokenomics design.  Key concepts referenced in this repository include the on‑chain component definitions【295456363413057†L558-L579】, the hybrid off‑chain architecture【295456363413057†L586-L619】, the member journey and claim workflow【295456363413057†L700-L748】, the $APH token functions【295456363413057†L817-L872】 and the tiered discount schedule【939762332769470†L154-L218】.
+
